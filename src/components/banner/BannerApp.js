@@ -30,4 +30,4 @@ class BannerApp extends Component{
 }//end:class-BannerApp
 
 
-export default GSAP()(Radium(BannerApp));
+export default GSAP()(Radium(BannerApp)); //GSAP wrapped React Object

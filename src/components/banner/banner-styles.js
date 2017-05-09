@@ -77,8 +77,12 @@ export default {
         top:'90px',
         left:'290px'
     },
-    'myAd_surfBoard':{
-        
+    'myAd_surfBoard':{        
+        width:'237px',
+        height:'65px',
+        backgroundPosition:'-2px -233px',
+        top:'110px',
+        left:'390px'
     },
     'myAd_shadow':{
         width:'35px',
