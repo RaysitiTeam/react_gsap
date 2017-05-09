@@ -60,7 +60,7 @@ export default {
         left:'0px',
     },
     'myAd_text2':{        
-        top:'60px',
+        top:'15px',
         left:'0px',
     },
     'myAd_text3':{
