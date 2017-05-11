@@ -14,6 +14,7 @@ class BannerApp extends Component{
         let tl1 = new TimelineMax();
         
         //FeelingStressed...YouCouldBeHere!
+        //-=1 would mean  x = x-1
         tl1
         .to(this.refs.myAd, .9,{opacity:1})
         .from(this.refs.myAd_text2,1.3,{top:-100,ease:Bounce.easeOut})
@@ -27,7 +28,8 @@ class BannerApp extends Component{
 
         // Animating the Clouds, inifnite loop
         let tl2 = new TimelineMax({repeat:-1});
-        tl2.to(this.refs.myAd_clouds,25,{backgroundPositionX:649,ease:Power0.easeOut});
+        tl2
+        .to(this.refs.myAd_clouds,25,{backgroundPositionX:649,ease:Power0.easeOut});
 
 
 
@@ -37,7 +39,7 @@ class BannerApp extends Component{
         return(
             <div width={configStyles.bannerWidth} style={styles.root}>            
                 <h1>Welcome to Banner App</h1>
-                <a id="myAdLink" style={styles.myAdLink}>Lynda link</a>
+                <a href='https://www.lynda.com/HTML-tutorials/Animating-letters-headline/373558/420207-4.html?autoplay=true#tab' key='1' target='_blank' style={styles.myAdLink}>Lynda link</a>
                 <div ref='myAd' id="myAd" style={styles.myAd}>
                     <div ref='myAd_clouds' style={[styles.myAd_Img, styles.myAd_clouds]} id="myAd_clouds"></div>
                     <div ref='myAd_photo' id="myAd_photo" style={[styles.myAd_Img, styles.myAd_photo]}></div>
@@ -48,6 +50,7 @@ class BannerApp extends Component{
                     <div ref='myAd_marker' id="myAd_marker" style={[styles.myAd_Img, styles.myAd_marker]}></div>                    
                     <div ref='myAd_surfBoard' id="myAd_surfBoard" style={[styles.myAd_Img, styles.myAd_surfBoard]}></div>                                        
                 </div>
+                <a href='https://app.pluralsight.com/library/courses/gsap-javascript-animation/table-of-contents' key='2' target='_blank'  style={styles.myAdLink}>Pluralsight GSAP animation with Javascript</a>
             </div>
         );
     }//end:render   

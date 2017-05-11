@@ -12,6 +12,7 @@ export default {
         cursor:'pointer',
         display:'inline-block',
         fontSize:'20px',
+        color:'white',
         ':hover':{
             color:'#2480d6',
             textDecoration:'underline'        
