@@ -22,6 +22,7 @@ export default {
         width:'640px',
         height:'200px',
         margin:'10px auto',
+        opacity:'0',
         backgroundColor:'#2480d6',        
         overflow:'hidden',
         borderRadius:'15px'
@@ -34,7 +35,8 @@ export default {
         width:'inherit',
         height:'inherit',
         top:'0px',
-        left:'0px'
+        left:'0px',
+        backgroundRepeat:'repeat-x'
     },
     'myAd_photo':{
         width:'inherit',
