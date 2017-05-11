@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './assets/logo.svg';
 import BannerApp from './banner/BannerApp';
+import BoardApp from './board/BoardApp';
 import {Style} from 'radium';
 //Import Global Styles
 import './App.css';
@@ -18,7 +19,10 @@ class App extends Component {
         <p className="App-intro">
           Animating using GSAP, powered by React Library
         </p>
-        <BannerApp/>        
+        {/*Lynda BannerApp*/}
+        <BannerApp/>
+        {/*Pluralsight Application*/}
+        <BoardApp/>
       </div>
     );
   }
