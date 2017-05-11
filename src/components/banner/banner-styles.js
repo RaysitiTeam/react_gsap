@@ -12,6 +12,7 @@ export default {
         cursor:'pointer',
         display:'inline-block',
         fontSize:'20px',
+        color:'white',
         ':hover':{
             color:'#2480d6',
             textDecoration:'underline'        
@@ -22,6 +23,7 @@ export default {
         width:'640px',
         height:'200px',
         margin:'10px auto',
+        opacity:'0',
         backgroundColor:'#2480d6',        
         overflow:'hidden',
         borderRadius:'15px'
@@ -34,7 +36,8 @@ export default {
         width:'inherit',
         height:'inherit',
         top:'0px',
-        left:'0px'
+        left:'0px',
+        backgroundRepeat:'repeat-x'
     },
     'myAd_photo':{
         width:'inherit',
@@ -77,8 +80,12 @@ export default {
         top:'90px',
         left:'290px'
     },
-    'myAd_surfBoard':{
-        
+    'myAd_surfBoard':{        
+        width:'237px',
+        height:'65px',
+        backgroundPosition:'-2px -233px',
+        top:'110px',
+        left:'390px'
     },
     'myAd_shadow':{
         width:'35px',

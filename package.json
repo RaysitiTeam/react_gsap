@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap": "3.3.6",
     "classnames": "^2.2.5",
+    "gsap": "^1.19.1",
     "jquery": "2.2.3",
     "prop-types": "^15.5.8",
     "radium": "^0.18.2",
