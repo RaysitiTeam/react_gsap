@@ -16,6 +16,7 @@ class BannerApp extends Component{
     
     initAnimation = ()=>{
         let tl1 = new TimelineMax();
+        let delayTime = 1;
         
         //FeelingStressed...YouCouldBeHere!
         //-=1 would mean  x = x-1
@@ -26,7 +27,7 @@ class BannerApp extends Component{
         .from(this.refs.myAd_marker,1.2,{top:-110,ease:Bounce.easeOut},'-=.5')
         .from(this.refs.myAd_shadow,1.2,{opacity:0,ease:Bounce.easeOut}, '-=1.2')
         .from(this.refs.myAd_text3,1.2,{scale:.2,opacity:0,ease:Power2.easeOut},'-=.9')
-        .from(this.refs.myAd_surfBoard,1.3,{top:260,rotation:-180,left:300,ease:Back.easeOut,onComplete:this.completeAnimation},'cta');
+        .from(this.refs.myAd_surfBoard,1.3,{top:260,rotation:-180,left:300,ease:Back.easeOut,onComplete:this.completeAnimation, onCompleteParams:[delayTime]},'cta');
 
         // tl1.seek('cta');//If you want to only animate a specific part of the animation, use this callback function
 
@@ -36,15 +37,17 @@ class BannerApp extends Component{
         .to(this.refs.myAd_clouds,25,{backgroundPositionX:649,ease:Power0.easeOut});
     }//end:initAnimation
 
-    completeAnimation = ()=>{
+    completeAnimation = (delayTime)=>{
         let tl1 = new TimelineMax();
                 
         tl1
         .to(this.refs.myAd, .9,{
+            delay:delayTime,
             opacity:0,
             height:0            
         })
-    }
+    };//end:completeAnimation
+
     componentDidMount = ()=>{         
         this.initAnimation();
     };//end:componentDidMount   
